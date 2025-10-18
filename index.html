@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- Ustawiamy język strony na polski -->
+<html lang="pl">
+<head>
+    <!-- Zestaw znaków, którego używamy (ważne dla polskich liter) -->
+    <meta charset="UTF-8">
+    <!-- To sprawia, że strona dobrze wygląda na telefonach -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tytuł, który widać w karcie przeglądarki -->
+    <title>Moje Portfolio</title>
+    
+    <!-- 
+        ############################################################################
+        #                                                                          #
+        #    Podłączamy zewnętrzny plik CSS, który odpowiada za wygląd strony.      #
+        #                                                                          #
+        ############################################################################
+    -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 
+        ############################################################################
+        #                                                                          #
+        #                                  HTML                                    #
+        # Tutaj znajduje się tylko struktura strony (HTML). Jest to szkielet, na   #
+        # którym opiera się cała zawartość. Wygląd i interakcje są w osobnych       #
+        # plikach.                                                                 #
+        #                                                                          #
+        ############################################################################
+    -->
+
+    <!-- Nagłówek strony -->
+    <header>
+        <h1>Wpisz Tutaj Swoje Imię</h1>
+    </header>
+
+    <!-- Główna zawartość strony -->
+    <main>
+        <!-- Sekcja "O mnie" -->
+        <section id="o-mnie">
+            <h2>O mnie</h2>
+            <p>
+                Witaj na mojej stronie! Tutaj możesz napisać kilka słów o sobie,
+                o tym co lubisz robić i czym się interesujesz. To jest miejsce,
+                aby się przedstawić.
+            </p>
+        </section>
+
+        <!-- Sekcja "Moje projekty" -->
+        <section id="projekty">
+            <h2>Moje projekty</h2>
+            <div class="projekty-kontener">
+                <div class="projekt">
+                    <h3>Projekt 1</h3>
+                    <p>Opis pierwszego projektu. Może to być gra, którą zrobiłeś/zrobiłaś, albo prosta strona internetowa.</p>
+                </div>
+                <div class="projekt">
+                    <h3>Projekt 2</h3>
+                    <p>Opis drugiego projektu. Pochwal się, co udało Ci się stworzyć!</p>
+                </div>
+                <div class="projekt">
+                    <h3>Projekt 3</h3>
+                    <p>Opis trzeciego projektu. Możesz tu dodać link do działającego projektu.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sekcja z interakcją JavaScript -->
+        <section id="interakcja">
+            <h2>Kliknij mnie!</h2>
+            <button id="magicButton">Pokaż ciekawostkę!</button>
+            <p id="funFact"></p>
+        </section>
+
+        <!-- Sekcja "Kontakt" -->
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>
+                Jeśli chcesz się ze mną skontaktować, napisz na adres:
+                <a href="mailto:twoj.email@example.com">twoj.email@example.com</a>
+            </p>
+        </section>
+    </main>
+
+    <!-- Stopka strony -->
+    <footer>
+        <p>&copy; 2025 Twoje Imię i Nazwisko</p>
+    </footer>
+
+    <!-- 
+        ############################################################################
+        #                                                                          #
+        #   Podłączamy zewnętrzny plik JavaScript, który odpowiada za interakcje.  #
+        #                                                                          #
+        ############################################################################
+    -->
+    <script src="script.js"></script>
+
+</body>
+</html>
