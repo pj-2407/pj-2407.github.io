@@ -1,0 +1,94 @@
+/* ############################################################################
+    #                                                                          #
+    #                                  CSS                                     #
+    # To jest plik ze stylami (CSS). Znajdują się tu wszystkie reguły,          #
+    # które opisują, jak strona ma wyglądać (kolory, czcionki, ułożenie).       #
+    #                                                                          #
+    ############################################################################
+*/
+
+/* Styl dla całego dokumentu HTML */
+body {
+    /* Rodzaj czcionki używanej na stronie */
+    font-family: sans-serif;
+    /* Kolor tła całej strony */
+    background-color: #f4f4f4;
+    /* Kolor tekstu */
+    color: #333;
+    /* Usuwamy domyślny margines */
+    margin: 0;
+    /* Usuwamy domyślne dopełnienie */
+    padding: 0;
+}
+
+/* Styl dla nagłówka strony (tam gdzie jest główne imię) */
+header {
+    /* Kolor tła nagłówka */
+    background-color: #333;
+    /* Kolor tekstu w nagłówku */
+    color: white;
+    /* Wewnętrzny odstęp (żeby tekst nie dotykał krawędzi) */
+    padding: 20px;
+    /* Wyśrodkowanie tekstu */
+    text-align: center;
+}
+
+/* Styl dla sekcji na stronie (np. "O mnie", "Projekty") */
+section {
+    /* Wewnętrzny odstęp */
+    padding: 20px;
+    /* Zewnętrzny odstęp na górze i na dole */
+    margin: 20px;
+    /* Kolor tła dla sekcji */
+    background-color: white;
+    /* Zaokrąglone rogi */
+    border-radius: 8px;
+}
+
+/* Styl dla pojemnika na projekty */
+.projekty-kontener {
+    /* Używamy flexboxa do ułożenia elementów obok siebie */
+    display: flex;
+    /* Jeśli nie ma miejsca, projekty przejdą do nowej linii */
+    flex-wrap: wrap;
+}
+
+/* Styl dla pojedynczego projektu */
+.projekt {
+    /* Tło pojedynczego projektu */
+    background-color: #e9e9e9;
+    /* Ramka wokół projektu */
+    border: 1px solid #ddd;
+    /* Zaokrąglone rogi */
+    border-radius: 5px;
+    /* Marginesy, żeby projekty nie stykały się ze sobą */
+    margin: 10px;
+    /* Dopełnienie wewnątrz karty projektu */
+    padding: 15px;
+    /* Szerokość - ok. 1/3 kontenera, z uwzględnieniem marginesów */
+    width: 30%;
+}
+
+/* Styl dla stopki na dole strony */
+footer {
+    /* Wyśrodkowanie tekstu */
+    text-align: center;
+    /* Dopełnienie */
+    padding: 20px;
+    /* Kolor tła stopki */
+    background-color: #333;
+    /* Kolor tekstu w stopce */
+    color: white;
+}
+
+/* Styl dla przycisku */
+button {
+    display: block; /* Przycisk zajmuje całą dostępną szerokość */
+    margin: 20px auto; /* Wyśrodkowanie przycisku */
+    padding: 10px 20px; /* Wewnętrzne odstępy */
+    background-color: #007BFF; /* Kolor tła */
+    color: white; /* Kolor tekstu */
+    border: none; /* Usunięcie ramki */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    cursor: pointer; /* Zmiana kursora na "rączkę" po najechaniu */
+}
